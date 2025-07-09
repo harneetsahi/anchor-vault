@@ -181,7 +181,7 @@ impl<'info> CloseAccounts<'info> {
 
         let vault_seeds = &[
             b"vault".as_ref(),
-            self.vault.to_account_info().key.as_ref(),
+            self.vault_state.to_account_info().key.as_ref(),
             &[self.vault_state.vault_bump]
         ];
 
