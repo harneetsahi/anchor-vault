@@ -116,10 +116,7 @@ impl<'info> Payments<'info> {
 
     pub fn withdraw(&mut self, amount: u64) -> Result<()> {
 
-        // check that this withdraw function leaves the vault with enough rent-exempt balance
-
-        // check that the account has enough funds for the user to withdraw
-
+    
         let cpi_program = self.system_program.to_account_info(); // systemprogram is the program that handles transfers
 
 
